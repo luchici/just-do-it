@@ -1,0 +1,8 @@
+@import "../UI/Var.module.scss";
+
+.navBar {
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 2;
+  background-color: $cardBgColor;
+  height: 100vh;
+}
