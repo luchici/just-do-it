@@ -1,0 +1,49 @@
+@import "../UI/Var.module.scss";
+
+.inputWrapper {
+  width: 90%;
+  margin: 0.5rem auto;
+  display: flex;
+  justify-content: end;
+  position: relative;
+}
+
+.input {
+  align-self: center;
+  flex: 1 0;
+  padding: 3px;
+  padding-left: 12px;
+
+  border-style: none;
+  height: 1.5rem;
+  border-radius: 4px;
+  box-shadow: 0 0 3px black;
+  font-size: 1rem;
+
+  ::placeholder {
+    font-weight: 300;
+    color: gray;
+  }
+}
+
+.input:focus {
+  box-shadow: inset 0 0 6px 0px rgba(0, 140, 255, 0.664);
+  outline: none;
+}
+
+.deleteIcon {
+  position: absolute;
+  width: 15px;
+  height: auto;
+  top: 20%;
+  right: 5%;
+  // fill: #808080;
+  filter: invert(56%) sepia(0%) saturate(446%) hue-rotate(191deg)
+    brightness(90%) contrast(92%);
+}
+
+.deleteIcon:hover {
+  filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(335deg) brightness(104%)
+    contrast(107%);
+  transform: scale(1.2);
+}

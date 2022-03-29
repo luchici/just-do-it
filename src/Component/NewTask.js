@@ -1,11 +1,22 @@
 import styles from "./NewTask.module.scss";
 
-import deleteIcon from "../Icons/delete.svg";
+import { minusI, deleteI } from "../UI/icons";
+import { useState } from "react";
 
 function Task(props) {
   return (
-    <div className={styles.task}>
-      <img src={deleteIcon} alt="fgdgdf"></img>
+    <div className={styles.inputWrapper}>
+      <input
+        type="text"
+        placeholder="New Task"
+        className={styles.input}
+        onKeyDown
+      ></input>
+      <img
+        src={deleteI.imageSRC}
+        alt={deleteI.alt}
+        className={styles.deleteIcon}
+      />
     </div>
   );
 }

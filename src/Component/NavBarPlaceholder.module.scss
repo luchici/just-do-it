@@ -1,0 +1,9 @@
+@import "../UI/Var.module.scss";
+
+.navBarPlaceholder {
+  grid-column: 1 / span 1;
+  grid-row: 1 / 7;
+  background-color: $cardBgColor;
+  height: 100%;
+  width: 100%;
+}

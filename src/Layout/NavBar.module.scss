@@ -1,8 +1,42 @@
 @import "../UI/Var.module.scss";
 
 .navBar {
-  grid-column: 1 / span 1;
-  grid-row: 1 / span 2;
+  position: fixed;
+  width: 1fr;
+
   background-color: $cardBgColor;
-  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.username {
+  margin: 6rem 0 6rem 0;
+  display: flex;
+  gap: 4rem;
+  flex-direction: column;
+  width: 20rem;
+  align-self: center;
+  font-size: 2rem;
+}
+.username button {
+  border: none;
+  background-color: $cardBgColor;
+  margin: 0;
+  // text-align: center;
+
+  font-size: 3rem;
+  color: $shadeColor;
+  text-shadow: 0 0 7px #fff, 0 0 10px, 0 0 21px #fff, 0 0 42px $shadeColor,
+    0 0 82px $shadeColor, 0 0 92px $shadeColor, 0 0 102px $shadeColor,
+    0 0 151px $shadeColor;
+
+  &:hover {
+    color: #bb46d8;
+    font-size: 3.5rem;
+  }
 }
