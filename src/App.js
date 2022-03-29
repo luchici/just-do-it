@@ -1,6 +1,5 @@
 import styles from "./App.module.scss";
 
-import Task from "./Component/Task";
 import Calendar from "./Component/Calendar";
 
 import ProjectCard from "./Layout/ProjectCard";

@@ -8,7 +8,7 @@ function ProjectCard(props) {
     <div className={styles.projectCard}>
       <div className={styles.cardTitleWrapper}>
         <h3 className={styles.projectCardTitle}>{props.text}</h3>
-        <img src={deleteIcon} className={styles.deleteIcon} />
+        <img src={deleteIcon} alt="dadas" className={styles.deleteIcon} />
       </div>
       <NewTask />
       <Task text="" />
