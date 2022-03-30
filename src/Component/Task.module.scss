@@ -17,16 +17,25 @@
   align-self: center;
 }
 
-.text {
+@mixin textBasic {
   height: 100%;
   margin: 0;
   align-self: center;
   padding-bottom: 0.1rem;
-  text-decoration: underline;
-  text-decoration-thickness: 1px;
-  font-weight: 400;
-
   flex: 1 0;
+  text-decoration-thickness: 3px;
+}
+.text {
+  @include textBasic;
+  text-decoration: underline;
+  font-weight: 400;
+}
+
+.textStrike {
+  @include textBasic;
+  text-decoration: line-through;
+  font-weight: 300;
+  color: grey;
 }
 
 .img {
