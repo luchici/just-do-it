@@ -1,13 +1,21 @@
 @import "../UI/Var.module.scss";
 
-.task {
+@mixin taskBasic {
   display: flex;
-  align-self: center;
   background-color: white;
-  width: 90%;
+  width: 100%;
   height: auto;
   border-radius: 5px;
+}
+
+.task {
+  @include taskBasic;
   // padding: 6px 2px 0px 2px;
+}
+
+.taskChecked {
+  @include taskBasic;
+  align-self: flex-end;
 }
 
 .checkbox {
@@ -20,10 +28,10 @@
 @mixin textBasic {
   height: 100%;
   margin: 0;
-  align-self: center;
   padding-bottom: 0.1rem;
   flex: 1 0;
   text-decoration-thickness: 3px;
+  align-self: center;
 }
 .text {
   @include textBasic;

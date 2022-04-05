@@ -3,16 +3,18 @@ import styles from "./Task.module.scss";
 import deleteIcon from "../Icons/delete.svg";
 import { useState } from "react";
 
-// TODO: #7 make the task component reactive - checkbox - strikethrough task title
 // TODO: #8 when task done move the task at the end of the list
+// TODO: #11 When click on a task, popup model with task editable data
 
 function Task(props) {
   const [isChecked, setIsChecked] = useState(false);
 
   const checkedHandler = function () {
-    console.log("ffffff");
     isChecked ? setIsChecked(false) : setIsChecked(true);
-    console.log("sssada");
+  };
+
+  const handlerDeleteTask = function () {
+    props.onDeleteTask(props.id);
   };
 
   return (
@@ -23,9 +25,14 @@ function Task(props) {
         onChange={checkedHandler}
       />
       <h3 className={isChecked ? styles.textStrike : styles.text}>
-        aaaaa {props.text}
+        {props.text}
       </h3>
-      <img src={deleteIcon} alt="dfsdfsdf" className={styles.img} />
+      <img
+        src={deleteIcon}
+        alt="delete image"
+        className={styles.img}
+        onClick={handlerDeleteTask}
+      />
     </div>
   );
 }
