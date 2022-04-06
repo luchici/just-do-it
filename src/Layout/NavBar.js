@@ -2,6 +2,11 @@ import styles from "./NavBar.module.scss";
 import ProjectTitle from "../Component/ProjectTitle";
 
 function NavBar(props) {
+  //   const projectTitleEl = props.projectsList.map((project) =>
+  //   {return
+  //     <ProjectTitle text={project.title} id={project.id}
+  // });
+
   return (
     <div className={styles.navBar}>
       <div className={styles.username}>

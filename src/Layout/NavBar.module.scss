@@ -2,7 +2,7 @@
 
 .navBar {
   position: fixed;
-  width: 1fr;
+  width: 16.5%;
 
   background-color: $cardBgColor;
 
@@ -19,7 +19,7 @@
   display: flex;
   gap: 4rem;
   flex-direction: column;
-  width: 20rem;
+  width: 100%;
   align-self: center;
   font-size: 2rem;
 }

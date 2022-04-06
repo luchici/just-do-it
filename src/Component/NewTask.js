@@ -5,8 +5,7 @@ import { useState } from "react";
 
 // TODO: #9 insert date and time. Both fields appear after click on inputbox
 // TODO: #10 create a new task when some text is typed into input box and ENTER key is press
-// TODO: #12 Add functionality to the x btn from input box
-// TODO:
+// TODO: #14 For new tasks, today date will become default date
 
 function NewTask(props) {
   const [titleValue, setTitleValue] = useState("");
